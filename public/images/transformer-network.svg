@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%" fill="none">
+  <!-- Subtle dark panel background -->
+  <rect width="500" height="350" rx="14" fill="#222B31" stroke="#323E45" stroke-width="1.5"/>
+
+  <!-- Top label -->
+  <text x="25" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE" letter-spacing="1">ARCHITECTURE // TRANSFORMER &amp; GENERATIVE AI</text>
+  <text x="475" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7E9387" text-anchor="end">IBM VIRTUAL INTERNSHIP</text>
+
+  <!-- Left: Multi-Head Self-Attention Block -->
+  <rect x="40" y="65" width="180" height="120" rx="8" fill="#1E252A" stroke="#7E9387" stroke-width="1.5"/>
+  <rect x="40" y="65" width="180" height="24" rx="8" fill="#3F6253"/>
+  <text x="130" y="81" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#FAF6EF" text-anchor="middle">Multi-Head Attention</text>
+
+  <!-- Attention Head Matrix Dots &amp; Connections -->
+  <g transform="translate(60, 105)">
+    <!-- Head Q, K, V lines -->
+    <circle cx="15" cy="20" r="5" fill="#7C5CFF"/>
+    <text x="15" y="36" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">Q</text>
+
+    <circle cx="55" cy="20" r="5" fill="#22D3EE"/>
+    <text x="55" y="36" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">K</text>
+
+    <circle cx="95" cy="20" r="5" fill="#FFB020"/>
+    <text x="95" y="36" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">V</text>
+
+    <circle cx="135" cy="20" r="6" fill="#10B981"/>
+    <text x="135" y="36" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">Softmax</text>
+
+    <!-- Connecting beams -->
+    <path d="M 20 20 L 50 20" stroke="#FAF6EF" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M 60 20 L 90 20" stroke="#FAF6EF" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M 100 20 L 130 20" stroke="#FAF6EF" stroke-width="1.5"/>
+    <path d="M 15 50 C 35 60, 75 60, 135 50" stroke="#22D3EE" stroke-width="1.2"/>
+  </g>
+  <text x="130" y="172" font-family="'JetBrains Mono', monospace" font-size="8" fill="#A1B3A9" text-anchor="middle">Scaled Dot-Product Matrix</text>
+
+  <!-- Right: Feed Forward &amp; Layer Norm Block -->
+  <rect x="280" y="65" width="180" height="120" rx="8" fill="#1E252A" stroke="#D9C3A3" stroke-width="1.5"/>
+  <rect x="280" y="65" width="180" height="24" rx="8" fill="#B89F7D"/>
+  <text x="370" y="81" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#1C1512" text-anchor="middle">Feed Forward Network</text>
+
+  <!-- Feed Forward Nodes -->
+  <g transform="translate(305, 105)">
+    <circle cx="20" cy="15" r="4" fill="#FAF6EF"/>
+    <circle cx="20" cy="35" r="4" fill="#FAF6EF"/>
+    <circle cx="20" cy="55" r="4" fill="#FAF6EF"/>
+
+    <circle cx="65" cy="10" r="4" fill="#D9C3A3"/>
+    <circle cx="65" cy="25" r="4" fill="#D9C3A3"/>
+    <circle cx="65" cy="45" r="4" fill="#D9C3A3"/>
+    <circle cx="65" cy="60" r="4" fill="#D9C3A3"/>
+
+    <circle cx="110" cy="25" r="4" fill="#22D3EE"/>
+    <circle cx="110" cy="45" r="4" fill="#22D3EE"/>
+
+    <!-- Synapse lines -->
+    <line x1="24" y1="15" x2="61" y2="10" stroke="#7E9387" stroke-width="0.8"/>
+    <line x1="24" y1="15" x2="61" y2="25" stroke="#7E9387" stroke-width="0.8"/>
+    <line x1="24" y1="35" x2="61" y2="25" stroke="#7E9387" stroke-width="0.8"/>
+    <line x1="24" y1="35" x2="61" y2="45" stroke="#7E9387" stroke-width="0.8"/>
+    <line x1="24" y1="55" x2="61" y2="45" stroke="#7E9387" stroke-width="0.8"/>
+    <line x1="24" y1="55" x2="61" y2="60" stroke="#7E9387" stroke-width="0.8"/>
+
+    <line x1="69" y1="10" x2="106" y2="25" stroke="#D9C3A3" stroke-width="0.8"/>
+    <line x1="69" y1="25" x2="106" y2="25" stroke="#D9C3A3" stroke-width="0.8"/>
+    <line x1="69" y1="45" x2="106" y2="45" stroke="#D9C3A3" stroke-width="0.8"/>
+    <line x1="69" y1="60" x2="106" y2="45" stroke="#D9C3A3" stroke-width="0.8"/>
+  </g>
+  <text x="370" y="172" font-family="'JetBrains Mono', monospace" font-size="8" fill="#D9C3A3" text-anchor="middle">Non-Linear ReLU / GELU Activation</text>
+
+  <!-- Connective Bridge from Attention to Feed Forward -->
+  <path d="M 220 125 L 280 125" stroke="#22D3EE" stroke-width="2" stroke-dasharray="4 2"/>
+  <polygon points="278,122 284,125 278,128" fill="#22D3EE"/>
+  <rect x="228" y="113" width="44" height="14" rx="3" fill="#141724" stroke="#323E45" stroke-width="0.8"/>
+  <text x="250" y="123" font-family="'JetBrains Mono', monospace" font-size="7" fill="#FAF6EF" text-anchor="middle">Residual</text>
+
+  <!-- Bottom: Token Embedding &amp; Positional Encoding Strip -->
+  <rect x="40" y="215" width="420" height="95" rx="8" fill="#1A1F24" stroke="#323E45" stroke-width="1"/>
+  <text x="55" y="235" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#7E9387">INPUT VECTORIZATION PIPELINE</text>
+  
+  <!-- Embedding stages -->
+  <g transform="translate(55, 250)">
+    <rect x="0" y="0" width="85" height="36" rx="4" fill="#222B31" stroke="#323E45"/>
+    <text x="42.5" y="15" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">Raw Prompt</text>
+    <text x="42.5" y="28" font-family="'JetBrains Mono', monospace" font-size="7" fill="#7E9387" text-anchor="middle">Text Tokens</text>
+
+    <text x="96" y="22" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FAF6EF">&#8594;</text>
+
+    <rect x="110" y="0" width="95" height="36" rx="4" fill="#222B31" stroke="#323E45"/>
+    <text x="157.5" y="15" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">Token Embed</text>
+    <text x="157.5" y="28" font-family="'JetBrains Mono', monospace" font-size="7" fill="#7C5CFF" text-anchor="middle">Dense Vectors</text>
+
+    <text x="216" y="22" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FAF6EF">+</text>
+
+    <rect x="230" y="0" width="95" height="36" rx="4" fill="#222B31" stroke="#323E45"/>
+    <text x="277.5" y="15" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF" text-anchor="middle">Positional Enc</text>
+    <text x="277.5" y="28" font-family="'JetBrains Mono', monospace" font-size="7" fill="#22D3EE" text-anchor="middle">Sinusoid Waves</text>
+
+    <text x="336" y="22" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FAF6EF">&#8594;</text>
+
+    <rect x="350" y="0" width="55" height="36" rx="4" fill="#3F6253"/>
+    <text x="377.5" y="15" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold" fill="#FAF6EF" text-anchor="middle">Model</text>
+    <text x="377.5" y="28" font-family="'JetBrains Mono', monospace" font-size="7" fill="#FAF6EF" text-anchor="middle">Inference</text>
+  </g>
+
+  <!-- Bottom Footer -->
+  <text x="250" y="332" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#7E9387" text-anchor="middle">
+    Hugging Face &#8226; TensorFlow &#8226; Prompt Benchmarking Strategies
+  </text>
+</svg>

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <linearGradient id="nlpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182025" />
+      <stop offset="100%" stop-color="#101518" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#0891B2" />
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C5CFF" />
+    </linearGradient>
+    <linearGradient id="nlpCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#232C32" />
+      <stop offset="100%" stop-color="#1A2227" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="0" y="0" width="900" height="560" rx="14" fill="url(#nlpBg)" stroke="#323E45" stroke-width="2" />
+
+  <!-- Titlebar -->
+  <rect x="0" y="0" width="900" height="42" rx="14" fill="#14191D" />
+  <rect x="0" y="32" width="900" height="10" fill="#14191D" />
+  <line x1="0" y1="42" x2="900" y2="42" stroke="#2B363C" stroke-width="1.5" />
+
+  <!-- Window Dots -->
+  <circle cx="24" cy="21" r="5" fill="#EF4444" />
+  <circle cx="42" cy="21" r="5" fill="#F59E0B" />
+  <circle cx="60" cy="21" r="5" fill="#10B981" />
+
+  <!-- URL Bar -->
+  <rect x="90" y="9" width="370" height="24" rx="6" fill="#1F272C" stroke="#2B363C" />
+  <text x="105" y="25" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE">Python NLP Pipeline // News Veracity Classifier</text>
+
+  <rect x="730" y="9" width="145" height="24" rx="6" fill="#1C2D35" stroke="#0E7490" stroke-width="1" />
+  <text x="802" y="25" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#67E8F9" text-anchor="middle">TF-IDF N-GRAMS</text>
+
+  <!-- Header -->
+  <g transform="translate(30, 60)">
+    <text x="0" y="24" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="bold" fill="#FAF6EF">Automated Fake News Detection &amp; NLP Pipeline</text>
+    <text x="0" y="44" font-family="'Inter', sans-serif" font-size="12" fill="#A1B3A9">Supervised Text Classifier &#8226; Linguistic Stylometry &#8226; NLTK &amp; Scikit-learn Evaluation</text>
+  </g>
+
+  <!-- 5-Stage NLP Processing Architecture Pipeline -->
+  <g transform="translate(30, 125)">
+    <rect x="0" y="0" width="840" height="100" rx="10" fill="url(#nlpCard)" stroke="#323E45" stroke-width="1.5" />
+    <text x="20" y="24" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#22D3EE" letter-spacing="1">END-TO-END NLP ARCHITECTURE PIPELINE</text>
+
+    <!-- Stage 1 -->
+    <rect x="20" y="36" width="145" height="50" rx="6" fill="#14191D" stroke="#323E45" />
+    <text x="32" y="54" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#22D3EE">STAGE 01</text>
+    <text x="32" y="68" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Tokenization</text>
+    <text x="32" y="80" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">NLTK Word &amp; Sent</text>
+
+    <!-- Arrow 1 -->
+    <path d="M 172,61 L 182,61" stroke="#22D3EE" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Stage 2 -->
+    <rect x="188" y="36" width="145" height="50" rx="6" fill="#14191D" stroke="#323E45" />
+    <text x="200" y="54" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#22D3EE">STAGE 02</text>
+    <text x="200" y="68" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Stop-Word Clean</text>
+    <text x="200" y="80" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">Noise Filtering</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 340,61 L 350,61" stroke="#22D3EE" stroke-width="2" />
+
+    <!-- Stage 3 -->
+    <rect x="356" y="36" width="145" height="50" rx="6" fill="#14191D" stroke="#7C5CFF" stroke-width="1.5" />
+    <text x="368" y="54" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#A78BFA">STAGE 03</text>
+    <text x="368" y="68" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">TF-IDF Vector</text>
+    <text x="368" y="80" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">Unigram + Bigram</text>
+
+    <!-- Arrow 3 -->
+    <path d="M 508,61 L 518,61" stroke="#7C5CFF" stroke-width="2" />
+
+    <!-- Stage 4 -->
+    <rect x="524" y="36" width="145" height="50" rx="6" fill="#14191D" stroke="#323E45" />
+    <text x="536" y="54" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#10B981">STAGE 04</text>
+    <text x="536" y="68" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Supervised Model</text>
+    <text x="536" y="80" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">Random Forest &amp; LR</text>
+
+    <!-- Arrow 4 -->
+    <path d="M 676,61 L 686,61" stroke="#10B981" stroke-width="2" />
+
+    <!-- Stage 5 -->
+    <rect x="692" y="36" width="130" height="50" rx="6" fill="#14191D" stroke="#323E45" />
+    <text x="704" y="54" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#FFB020">STAGE 05</text>
+    <text x="704" y="68" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Evaluation</text>
+    <text x="704" y="80" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">Precision / Recall</text>
+  </g>
+
+  <!-- Left Chart: Confusion Matrix Visual -->
+  <g transform="translate(30, 245)">
+    <rect x="0" y="0" width="395" height="240" rx="10" fill="url(#nlpCard)" stroke="#323E45" stroke-width="1.5" />
+    <text x="20" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FAF6EF">Classifier Confusion Matrix</text>
+    <text x="20" y="42" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22D3EE">Supervised Evaluation on Test Split</text>
+
+    <!-- 2x2 Grid -->
+    <g transform="translate(50, 60)">
+      <!-- True Negative -->
+      <rect x="0" y="0" width="140" height="70" rx="6" fill="#1E3A8A" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="70" y="32" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">True Neg</text>
+      <text x="70" y="52" font-family="'Inter', sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">Verified Authentic</text>
+
+      <!-- False Positive -->
+      <rect x="150" y="0" width="140" height="70" rx="6" fill="#1A2227" stroke="#323E45" />
+      <text x="220" y="32" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="bold" fill="#9CA3AF" text-anchor="middle">False Pos</text>
+      <text x="220" y="52" font-family="'Inter', sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Type I Error</text>
+
+      <!-- False Negative -->
+      <rect x="0" y="80" width="140" height="70" rx="6" fill="#1A2227" stroke="#323E45" />
+      <text x="70" y="112" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="bold" fill="#9CA3AF" text-anchor="middle">False Neg</text>
+      <text x="70" y="132" font-family="'Inter', sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Type II Error</text>
+
+      <!-- True Positive -->
+      <rect x="150" y="80" width="140" height="70" rx="6" fill="#065F46" stroke="#10B981" stroke-width="1.5" />
+      <text x="220" y="112" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">True Pos</text>
+      <text x="220" y="132" font-family="'Inter', sans-serif" font-size="10" fill="#6EE7B7" text-anchor="middle">Flagged Misinformation</text>
+    </g>
+  </g>
+
+  <!-- Right Chart: Word Cloud &amp; Linguistic Frequency Matrix -->
+  <g transform="translate(445, 245)">
+    <rect x="0" y="0" width="425" height="240" rx="10" fill="url(#nlpCard)" stroke="#323E45" stroke-width="1.5" />
+    <text x="20" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FAF6EF">Linguistic Stylometry &amp; Word Cloud</text>
+    <text x="20" y="42" font-family="'JetBrains Mono', monospace" font-size="9" fill="#A78BFA">Weighted TF-IDF Vocabulary Analysis</text>
+
+    <!-- Word Cloud Visual Area -->
+    <g transform="translate(20, 60)">
+      <rect x="0" y="0" width="385" height="150" rx="8" fill="#14191D" stroke="#2B363C" />
+      
+      <!-- Typographic Cloud -->
+      <text x="190" y="40" font-family="'Playfair Display', serif" font-size="20" font-weight="900" fill="#FAF6EF" text-anchor="middle">headline_sentiment</text>
+      <text x="90" y="70" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#22D3EE" text-anchor="middle">veracity_index</text>
+      <text x="290" y="72" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#7E9387" text-anchor="middle">source_reputation</text>
+      
+      <text x="180" y="100" font-family="'Playfair Display', serif" font-size="22" font-weight="bold" fill="#FFB020" text-anchor="middle">clickbait_entropy</text>
+      <text x="70" y="125" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A78BFA" text-anchor="middle">n_gram_weight</text>
+      <text x="310" y="125" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#D9C3A3" text-anchor="middle">stylometry_cues</text>
+      <text x="190" y="135" font-family="'JetBrains Mono', monospace" font-size="10" fill="#6EE7B7" text-anchor="middle">corpus_frequency</text>
+    </g>
+  </g>
+
+  <!-- Bottom Line -->
+  <line x1="30" y1="510" x2="870" y2="510" stroke="#2B363C" stroke-width="1" />
+  <text x="30" y="534" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7E9387">PYTHON &#8226; NLTK &#8226; SCIKIT-LEARN &#8226; TF-IDF &#8226; SUPERVISED CLASSIFIER &#8226; VERIFIED METRICS</text>
+  <text x="870" y="534" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#22D3EE" text-anchor="end">SHRUTI DIXIT // LOOKBOOK ARCHIVE</text>
+</svg>

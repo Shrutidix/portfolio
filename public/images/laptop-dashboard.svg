@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%" fill="none">
+  <!-- Laptop Display Bezel -->
+  <rect x="75" y="35" width="350" height="225" rx="12" fill="#222B31" stroke="#323E45" stroke-width="2"/>
+  
+  <!-- Web Camera -->
+  <circle cx="250" cy="45" r="2.5" fill="#141724"/>
+  <circle cx="250" cy="45" r="1" fill="#22D3EE"/>
+
+  <!-- Screen Glass Area -->
+  <rect x="87" y="55" width="326" height="192" rx="4" fill="#FAF6EF"/>
+
+  <!-- Dashboard Top Bar -->
+  <rect x="87" y="55" width="326" height="22" fill="#222B31"/>
+  <circle cx="98" cy="66" r="3" fill="#E06C75"/>
+  <circle cx="108" cy="66" r="3" fill="#E5C07B"/>
+  <circle cx="118" cy="66" r="3" fill="#98C379"/>
+  <text x="135" y="70" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FAF6EF">analytics-console // executive-kpi.view</text>
+  <rect x="345" y="60" width="60" height="12" rx="3" fill="#323E45"/>
+  <text x="375" y="69" font-family="'JetBrains Mono', monospace" font-size="7" fill="#22D3EE" text-anchor="middle">LIVE ETL</text>
+
+  <!-- Dashboard Content: Left KPI Cards -->
+  <rect x="97" y="85" width="65" height="36" rx="4" fill="#FFFFFF" stroke="#E0D4C3" stroke-width="1"/>
+  <text x="103" y="96" font-family="'JetBrains Mono', monospace" font-size="6.5" fill="#7E9387">METRIC_01</text>
+  <text x="103" y="112" font-family="'Playfair Display', serif" font-size="13" font-weight="bold" fill="#1C1512">94.8%</text>
+
+  <rect x="168" y="85" width="65" height="36" rx="4" fill="#FFFFFF" stroke="#E0D4C3" stroke-width="1"/>
+  <text x="174" y="96" font-family="'JetBrains Mono', monospace" font-size="6.5" fill="#7E9387">PIPELINE</text>
+  <text x="174" y="112" font-family="'Playfair Display', serif" font-size="13" font-weight="bold" fill="#3F6253">PASS</text>
+
+  <rect x="239" y="85" width="65" height="36" rx="4" fill="#FFFFFF" stroke="#E0D4C3" stroke-width="1"/>
+  <text x="245" y="96" font-family="'JetBrains Mono', monospace" font-size="6.5" fill="#7E9387">LATENCY</text>
+  <text x="245" y="112" font-family="'Playfair Display', serif" font-size="13" font-weight="bold" fill="#1C1512">&lt;12ms</text>
+
+  <rect x="310" y="85" width="93" height="36" rx="4" fill="#3F6253"/>
+  <text x="318" y="96" font-family="'JetBrains Mono', monospace" font-size="6.5" fill="#E2E8F0">DECISION CORE</text>
+  <text x="318" y="112" font-family="'Playfair Display', serif" font-size="11" font-weight="bold" fill="#FAF6EF">READY &#8594;</text>
+
+  <!-- Main Chart 1: Bar Chart (Left) -->
+  <rect x="97" y="128" width="145" height="110" rx="4" fill="#FFFFFF" stroke="#E0D4C3" stroke-width="1"/>
+  <text x="105" y="141" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold" fill="#1C1512">FEATURE IMPORTANCE</text>
+  <!-- Bars -->
+  <rect x="105" y="150" width="115" height="8" rx="2" fill="#7E9387"/>
+  <rect x="105" y="164" width="95" height="8" rx="2" fill="#D9C3A3"/>
+  <rect x="105" y="178" width="80" height="8" rx="2" fill="#7E9387"/>
+  <rect x="105" y="192" width="60" height="8" rx="2" fill="#D9C3A3"/>
+  <rect x="105" y="206" width="105" height="8" rx="2" fill="#3F6253"/>
+  <rect x="105" y="220" width="45" height="8" rx="2" fill="#D9C3A3"/>
+
+  <!-- Main Chart 2: Area / Trend Chart (Right) -->
+  <rect x="250" y="128" width="153" height="110" rx="4" fill="#FFFFFF" stroke="#E0D4C3" stroke-width="1"/>
+  <text x="258" y="141" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold" fill="#1C1512">PREDICTIVE RETENTION TREND</text>
+  <path d="M 260 215 C 280 205, 300 220, 320 185 C 340 150, 360 170, 390 155 L 390 225 L 260 225 Z" fill="#7E9387" fill-opacity="0.2"/>
+  <path d="M 260 215 C 280 205, 300 220, 320 185 C 340 150, 360 170, 390 155" stroke="#3F6253" stroke-width="2"/>
+  <!-- Trend Points -->
+  <circle cx="260" cy="215" r="2.5" fill="#3F6253"/>
+  <circle cx="320" cy="185" r="2.5" fill="#3F6253"/>
+  <circle cx="390" cy="155" r="2.5" fill="#22D3EE"/>
+
+  <!-- Laptop Base Body -->
+  <path d="M 35 260 L 465 260 L 440 280 L 60 280 Z" fill="#2B1E18" stroke="#323E45" stroke-width="1.5"/>
+  <rect x="215" y="260" width="70" height="4" rx="2" fill="#7E9387"/>
+
+  <!-- Trackpad Notch -->
+  <rect x="200" y="266" width="100" height="10" rx="3" fill="#1E252A" stroke="#323E45" stroke-width="0.8"/>
+</svg>

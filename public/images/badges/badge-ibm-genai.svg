@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="ibmBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F62FE" />
+      <stop offset="100%" stop-color="#002D9C" />
+    </linearGradient>
+    <linearGradient id="ibmDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161616" />
+      <stop offset="100%" stop-color="#262626" />
+    </linearGradient>
+    <filter id="ibmShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F62FE" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Hexagon Outer -->
+  <polygon points="100,12 176,55 176,145 100,188 24,145 24,55" fill="url(#ibmDark)" stroke="url(#ibmBlue)" stroke-width="3" filter="url(#ibmShadow)" />
+  <polygon points="100,20 168,59 168,141 100,180 32,141 32,59" fill="none" stroke="rgba(15, 98, 254, 0.3)" stroke-width="1.5" />
+
+  <!-- IBM 8-Bar Minimal Logo Mark -->
+  <g transform="translate(68, 40)" fill="#0F62FE">
+    <!-- Stylized IBM typography -->
+    <rect x="0" y="0" width="16" height="3" />
+    <rect x="0" y="5" width="16" height="3" />
+    <rect x="0" y="10" width="16" height="3" />
+    <rect x="0" y="15" width="16" height="3" />
+    <rect x="0" y="20" width="16" height="3" />
+    <text x="32" y="18" font-family="'Inter', sans-serif" font-weight="900" font-size="18" fill="#FFFFFF" letter-spacing="2">IBM</text>
+  </g>
+
+  <!-- Neural Mesh Emblem -->
+  <g transform="translate(100, 96)" stroke="#0F62FE" stroke-width="1.5" fill="#22D3EE">
+    <circle cx="0" cy="-12" r="4.5" />
+    <circle cx="-16" cy="4" r="4.5" />
+    <circle cx="16" cy="4" r="4.5" />
+    <circle cx="0" cy="16" r="4.5" />
+    <line x1="0" y1="-12" x2="-16" y2="4" stroke="#0F62FE" />
+    <line x1="0" y1="-12" x2="16" y2="4" stroke="#0F62FE" />
+    <line x1="-16" y1="4" x2="16" y2="4" stroke="#0F62FE" />
+    <line x1="-16" y1="4" x2="0" y2="16" stroke="#0F62FE" />
+    <line x1="16" y1="4" x2="0" y2="16" stroke="#0F62FE" />
+    <circle cx="0" cy="2" r="2.5" fill="#FFFFFF" stroke="none" />
+  </g>
+
+  <!-- Banner -->
+  <rect x="36" y="132" width="128" height="17" rx="3" fill="url(#ibmBlue)" />
+  <text x="100" y="144" font-family="'Inter', sans-serif" font-weight="900" font-size="8.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">VIRTUAL INTERNSHIP</text>
+  <text x="100" y="162" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="7.5" fill="#22D3EE" text-anchor="middle">GENERATIVE AI &#8226; FSP</text>
+  <text x="100" y="174" font-family="'Inter', sans-serif" font-weight="600" font-size="6" fill="#A1B3A9" text-anchor="middle">DEVELOPER SKILLS NETWORK</text>
+</svg>

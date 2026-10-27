@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="30%" stop-color="#FFB300" />
+      <stop offset="70%" stop-color="#FF8F00" />
+      <stop offset="100%" stop-color="#FF6F00" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E252A" />
+      <stop offset="100%" stop-color="#141A1E" />
+    </linearGradient>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Seal Ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="3,3" />
+  <circle cx="100" cy="100" r="86" fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="2.5" filter="url(#badgeShadow)" />
+
+  <!-- Shield Base -->
+  <path d="M 60,50 L 140,50 C 140,50 144,95 100,135 C 56,95 60,50 60,50 Z" fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="2" />
+  
+  <!-- Laurel / Stars -->
+  <g fill="url(#goldGrad)">
+    <!-- 5 Stars -->
+    <path d="M 100,60 L 102,65 L 107,65 L 103,68 L 105,73 L 100,70 L 95,73 L 97,68 L 93,65 L 98,65 Z" />
+    <path d="M 85,65 L 86,69 L 90,69 L 87,71 L 88,75 L 85,73 L 82,75 L 83,71 L 80,69 L 84,69 Z" />
+    <path d="M 115,65 L 116,69 L 120,69 L 117,71 L 118,75 L 115,73 L 112,75 L 113,71 L 110,69 L 114,69 Z" />
+  </g>
+
+  <!-- Typography -->
+  <text x="100" y="88" font-family="'Inter', sans-serif" font-weight="900" font-size="11" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">NASSCOM</text>
+  <text x="100" y="99" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="7.5" fill="#EFE6DA" text-anchor="middle" letter-spacing="0.5">FUTURESKILLS PRIME</text>
+  
+  <!-- Gold Banner -->
+  <rect x="62" y="106" width="76" height="15" rx="3" fill="url(#goldGrad)" />
+  <text x="100" y="117" font-family="'Inter', sans-serif" font-weight="900" font-size="8" fill="#141A1E" text-anchor="middle" letter-spacing="0.8">GOLD 70%+</text>
+  
+  <!-- Subtext -->
+  <text x="100" y="152" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="6.5" fill="#A1B3A9" text-anchor="middle" letter-spacing="0.5">IT-ITES SSC &#8226; VERIFIED</text>
+  <text x="100" y="162" font-family="'Inter', sans-serif" font-weight="700" font-size="6" fill="#D9C3A3" text-anchor="middle">GOVT OF INDIA ACCREDITED</text>
+</svg>

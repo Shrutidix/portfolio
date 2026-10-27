@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page Not Found | Shruti Dixit Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background-color: #221713;
+        color: #FAF6EF;
+        font-family: 'JetBrains Mono', monospace;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background-color: #FAF6EF;
+        color: #1C1512;
+        border-radius: 16px;
+        padding: 40px;
+        max-width: 620px;
+        width: 100%;
+        border: 1px solid rgba(0,0,0,0.15);
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      }
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 54px;
+        line-height: 1;
+        margin-bottom: 8px;
+        color: #1C1512;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #3F6253;
+        margin-bottom: 12px;
+      }
+      p {
+        font-family: 'EB Garamond', serif;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #3B2F2A;
+        margin-bottom: 24px;
+      }
+      .terminal {
+        background-color: #1C1512;
+        color: #FAF6EF;
+        padding: 16px;
+        border-radius: 10px;
+        font-size: 13px;
+        margin-bottom: 24px;
+        line-height: 1.5;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #222B31;
+        color: #FAF6EF;
+        padding: 12px 24px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+      }
+      .btn:hover {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div style="font-size: 11px; font-weight: bold; color: #3F6253; margin-bottom: 16px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+        PAGE 404 // LOOKBOOK INDEX ANOMALY
+      </div>
+      <h1>404</h1>
+      <h2>Record Not Located</h2>
+      <p>The requested dossier page does not exist or has been relocated within the data architecture.</p>
+      <div class="terminal">
+        <span style="color: #22D3EE;">SELECT</span> page_id, title <span style="color: #22D3EE;">FROM</span> editorial_index <br />
+        <span style="color: #22D3EE;">WHERE</span> path = window.location.pathname; <br />
+        <span style="color: #FFB020;">-- Warning: 0 rows returned.</span>
+      </div>
+      <a href="/" class="btn">&larr; Return to Portfolio Cover</a>
+    </div>
+  </body>
+</html>

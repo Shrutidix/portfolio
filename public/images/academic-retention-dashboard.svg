@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192024" />
+      <stop offset="100%" stop-color="#11161A" />
+    </linearGradient>
+    <linearGradient id="shapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#232C32" />
+      <stop offset="100%" stop-color="#1B2227" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Frame Background -->
+  <rect x="0" y="0" width="900" height="560" rx="14" fill="url(#bgGrad)" stroke="#323E45" stroke-width="2" />
+
+  <!-- Window Header Bar -->
+  <rect x="0" y="0" width="900" height="42" rx="14" fill="#14191D" />
+  <rect x="0" y="32" width="900" height="10" fill="#14191D" />
+  <line x1="0" y1="42" x2="900" y2="42" stroke="#2B363C" stroke-width="1.5" />
+
+  <!-- Window Control Dots -->
+  <circle cx="24" cy="21" r="5" fill="#EF4444" />
+  <circle cx="42" cy="21" r="5" fill="#F59E0B" />
+  <circle cx="60" cy="21" r="5" fill="#10B981" />
+
+  <!-- Streamlit URL Bar -->
+  <rect x="90" y="9" width="340" height="24" rx="6" fill="#1F272C" border="1px" stroke="#2B363C" />
+  <text x="105" y="25" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7E9387">https://academic-retention.streamlit.app</text>
+  
+  <rect x="740" y="9" width="136" height="24" rx="6" fill="#251F33" stroke="#5E43A6" stroke-width="1" />
+  <text x="808" y="25" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#C4B5FD" text-anchor="middle">5-FOLD CV VERIFIED</text>
+
+  <!-- Top Dashboard Banner -->
+  <g transform="translate(30, 60)">
+    <text x="0" y="24" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="bold" fill="#FAF6EF">AI-Driven Academic Risk &amp; Student Retention System</text>
+    <text x="0" y="44" font-family="'Inter', sans-serif" font-size="12" fill="#A1B3A9">Supervised ML Early-Warning Pipeline &#8226; Automated Roster Analysis &#8226; Scikit-learn + Streamlit</text>
+  </g>
+
+  <!-- Metric Badges Row -->
+  <g transform="translate(30, 125)">
+    <!-- Metric 1 -->
+    <rect x="0" y="0" width="260" height="85" rx="10" fill="url(#cardGrad)" stroke="#323E45" stroke-width="1.5" />
+    <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#22D3EE" letter-spacing="1">PREDICTIVE ROC-AUC</text>
+    <text x="18" y="58" font-family="'Playfair Display', serif" font-size="28" font-weight="900" fill="#FAF6EF">0.892</text>
+    <text x="18" y="74" font-family="'Inter', sans-serif" font-size="10" fill="#7E9387">Optimized Gradient Boosting</text>
+
+    <!-- Metric 2 -->
+    <rect x="290" y="0" width="260" height="85" rx="10" fill="url(#cardGrad)" stroke="#323E45" stroke-width="1.5" />
+    <text x="308" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#10B981" letter-spacing="1">COHORT RETENTION RATE</text>
+    <text x="308" y="58" font-family="'Playfair Display', serif" font-size="28" font-weight="900" fill="#FAF6EF">91.4%</text>
+    <text x="308" y="74" font-family="'Inter', sans-serif" font-size="10" fill="#7E9387">Benchmark Evaluation Set</text>
+
+    <!-- Metric 3 (CSV Status) -->
+    <rect x="580" y="0" width="260" height="85" rx="10" fill="url(#cardGrad)" stroke="#323E45" stroke-width="1.5" />
+    <text x="598" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#FFB020" letter-spacing="1">BATCH INGESTION</text>
+    <text x="598" y="52" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#FAF6EF">roster_cohort_2026.csv</text>
+    <text x="598" y="72" font-family="'Inter', sans-serif" font-size="10" fill="#10B981">&#10003; 1,240 Student Records Parsed</text>
+  </g>
+
+  <!-- Left Chart: Cohort Risk Distribution (3 Bars) -->
+  <g transform="translate(30, 230)">
+    <rect x="0" y="0" width="395" height="255" rx="10" fill="url(#cardGrad)" stroke="#323E45" stroke-width="1.5" />
+    <text x="20" y="28" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FAF6EF">Cohort Risk Distribution</text>
+    <text x="20" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#7E9387">Supervised Multi-Class Probability Split</text>
+
+    <!-- Bar 1: Low Risk -->
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Low Risk (On Track)</text>
+    <text x="345" y="80" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#10B981" text-anchor="end">68%</text>
+    <rect x="20" y="90" width="345" height="18" rx="5" fill="#14191D" />
+    <rect x="20" y="90" width="235" height="18" rx="5" fill="#10B981" />
+
+    <!-- Bar 2: Medium Risk -->
+    <text x="20" y="135" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Medium Risk (Monitoring Required)</text>
+    <text x="345" y="135" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#F59E0B" text-anchor="end">22%</text>
+    <rect x="20" y="145" width="345" height="18" rx="5" fill="#14191D" />
+    <rect x="20" y="145" width="76" height="18" rx="5" fill="#F59E0B" />
+
+    <!-- Bar 3: High Risk -->
+    <text x="20" y="190" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">High Risk (Immediate Academic Support)</text>
+    <text x="345" y="190" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#EF4444" text-anchor="end">10%</text>
+    <rect x="20" y="200" width="345" height="18" rx="5" fill="#14191D" />
+    <rect x="20" y="200" width="35" height="18" rx="5" fill="#EF4444" />
+
+    <!-- Footer Note -->
+    <text x="20" y="240" font-family="'JetBrains Mono', monospace" font-size="9" fill="#7E9387">&#8226; Random Forest &#8226; Gradient Boosting Pipelines &#8226; SHAP Evaluator</text>
+  </g>
+
+  <!-- Right Chart: SHAP Feature Importance (Horizontal bars with gradient) -->
+  <g transform="translate(445, 230)">
+    <rect x="0" y="0" width="425" height="255" rx="10" fill="url(#cardGrad)" stroke="#323E45" stroke-width="1.5" />
+    <text x="20" y="28" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#FAF6EF">SHAP Feature Importance</text>
+    
+    <rect x="260" y="16" width="80" height="16" rx="4" fill="#451A03" stroke="#B45309" stroke-width="1" />
+    <text x="300" y="28" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#FDE68A" text-anchor="middle">ILLUSTRATIVE</text>
+    <text x="20" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22D3EE">Mean(|SHAP value|) on Retention Odds</text>
+
+    <!-- SHAP 1: Semester GPA -->
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Semester 1 Cumulative GPA</text>
+    <text x="385" y="80" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE" text-anchor="end">+0.38</text>
+    <rect x="20" y="90" width="365" height="16" rx="4" fill="#14191D" />
+    <rect x="20" y="90" width="308" height="16" rx="4" fill="url(#shapGrad)" />
+
+    <!-- SHAP 2: Course Attendance -->
+    <text x="20" y="125" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Course Attendance %</text>
+    <text x="385" y="125" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE" text-anchor="end">+0.29</text>
+    <rect x="20" y="135" width="365" height="16" rx="4" fill="#14191D" />
+    <rect x="20" y="135" width="248" height="16" rx="4" fill="url(#shapGrad)" />
+
+    <!-- SHAP 3: Assignment Rate -->
+    <text x="20" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Assignment Submission Punctuality</text>
+    <text x="385" y="170" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE" text-anchor="end">+0.21</text>
+    <rect x="20" y="180" width="365" height="16" rx="4" fill="#14191D" />
+    <rect x="20" y="180" width="186" height="16" rx="4" fill="url(#shapGrad)" />
+
+    <!-- SHAP 4: Prior Academic Prep -->
+    <text x="20" y="215" font-family="'Inter', sans-serif" font-size="11" fill="#E5E7EB">Standardized Prerequisite Score</text>
+    <text x="385" y="215" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE" text-anchor="end">+0.14</text>
+    <rect x="20" y="223" width="365" height="16" rx="4" fill="#14191D" />
+    <rect x="20" y="223" width="124" height="16" rx="4" fill="url(#shapGrad)" />
+  </g>
+
+  <!-- Bottom Global Status Line -->
+  <line x1="30" y1="510" x2="870" y2="510" stroke="#2B363C" stroke-width="1" />
+  <text x="30" y="534" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7E9387">DATA PIPELINE: PANDAS &#8226; NUMPY &#8226; SCIKIT-LEARN &#8226; STREAMLIT &#8226; SHAP</text>
+  <text x="870" y="534" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#22D3EE" text-anchor="end">SHRUTI DIXIT // LOOKBOOK ARCHIVE</text>
+</svg>
